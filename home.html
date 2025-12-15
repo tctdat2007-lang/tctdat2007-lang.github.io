@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - CompanyX</title>
+
+</head>
+<body>
+
+
+<header class="navbar">
+    <div class="logo">Site Logo</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+
+<section id="home" class="home-section">
+    <div class="content-wrapper">
+
+        <h1 class="title">CompanyX</h1>
+
+        <div class="big-img"></div>
+
+        <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis labore atque iure perferendis, ut quidem distinctio suscipit,
+            voluptatibus aperiam repudiandae aspernatur, nostrum debitis.
+            Ad molestiae earum voluptatum deserunt doloribus obcaecati?
+        </p>
+
+    </div>
+</section>
+
+</body>
+</html>
+
+<style>
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3ece6;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #cccccc;
+        padding: 15px 80px;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        background: #777;
+        padding: 10px 40px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .navbar nav a {
+        margin: 0 25px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .home-section {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        background: linear-gradient(#dcdcdc, #c6c6c6);
+        padding: 50px 0;
+        border: 1px solid #c3c3c3;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .home-section::before {
+        content: "";
+        position: absolute;
+        top: -80px;
+        left: -50px;
+        width: 300px;
+        height: 300px;
+        background: rgba(100, 100, 100, 0.15);
+        border-radius: 50%;
+    }
+
+    .home-section::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -50px;
+        width: 350px;
+        height: 350px;
+        background: rgba(100, 100, 100, 0.15);
+        border-radius: 50%;
+    }
+
+    .content-wrapper {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .title {
+        font-size: 40px;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .big-img {
+        width: 80%;
+        height: 300px;
+        background: #333;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #aaa;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .big-img::after {
+        content: "IMG";
+    }
+
+    .description {
+        width: 75%;
+        margin: 25px auto;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+</style>
+
